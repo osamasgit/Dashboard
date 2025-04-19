@@ -1,0 +1,354 @@
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* CSS Reset End */
+
+body {
+    font-family: "Roboto", sans-serif;    
+}
+
+.header-top {
+    display: flex;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.btn-home {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.header-bottom {
+    position: fixed;
+    width: 90%;
+    bottom: 5vh;
+    right: 0;
+    border-bottom: white solid 3px;
+}   
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 10px;
+    gap: 15px;
+    margin-right: 10px;
+} 
+
+li img.icon {
+    width: 30px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: rgba(37, 36, 36, 0.701);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffffb0;
+    gap: 15px;
+    max-width: 330px;
+}
+
+.clock {
+    font-size: 50px;
+    color: #c9c9c9;
+}
+
+.date {
+    font-size: 25px;
+    color: #c9c9c9;
+}
+
+.phrase {
+    font-size: 14px;
+    color: white;
+}
+
+h1 {
+    font-size: 24px;
+    color: white;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+}
+
+#pass-result {
+    font-size: 18px;
+    color: rgb(149, 253, 149);
+    font-weight: 700;
+}
+
+#pass-generator {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #0371d8;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #3499fd;
+}
+
+#num-of-characters {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.title {
+    display: flex;
+    gap: 5px;
+}
+
+.icon {
+    filter: invert(1);
+    width: 24px;
+}
+
+.weather-icon {
+    width: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffffb0;
+    max-width: 100px;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    color: #ffffffb0;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#title, #url {
+    width: 330px;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+}
+
+#btn-add {
+    width: 70px;
+}
+
+#links-btns {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 330px;
+    max-height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: darkgray transparent;
+}
+
+.weather-card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: rgba(37, 36, 36, 0.701);
+    text-align: start;
+    align-items: start;
+    justify-content: start;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 330px;
+}
+
+.current {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.city-info {
+    color: white;
+    text-align: start;
+}
+
+.current-text {
+    color: #ffe5c1;
+    text-align: start;
+}
+
+.other-data {
+    color: #c9c9c9;
+}
+
+.weather-info { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-info p {
+    font-size: 36px;
+    font-weight: 400;
+    color: white;
+}
+
+.weather-info img {
+    height: 24px;
+}
+
+.other-data {
+    font-size: 14px;
+    text-align: start;
+}
+
+#current {
+    display: flex;
+    flex-direction: column;
+}
+
+#forecast {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    max-width: 330px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-color: darkgray transparent;
+    text-align: center;
+    font-size: 14px;
+}
+
+.apps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+    margin-left: 60px;
+}
+
+@media(max-width: 950px) {
+    .apps {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-color: darkgray transparent;
+        z-index: 1;
+    }
+
+    .right-container {
+        display: contents;
+    }
+
+    .clock-container {
+        order: 1;
+    }
+    
+    .weather-container {
+        order: 2;
+    }
+    
+    .links-container {
+        order: 3;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .passwords-container {
+        order: 4;
+        padding-bottom: 60px;
+    }
+}
